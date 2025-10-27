@@ -8,15 +8,14 @@ function delete_request(req,res){
 
     let i = 0;
     let b = false;
-    while(i < data.legnth && !b){
+    while(i < data.length && !b){
         if(data[i].id === req.body.id){
-            data[i].name = '';
+            data.splice(i,1);
             b = true;
         }
 
         i++;
     }
-
 
     if(!b){
         return res.status(404).json({message:"item not found"});
@@ -27,4 +26,5 @@ function delete_request(req,res){
     data = JSON.parse(text);
 
     res.json(data);
+    console.log("entry delted");
 }
