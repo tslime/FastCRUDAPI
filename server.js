@@ -6,6 +6,7 @@ const p = require('./routes/putrequest.js')
 
 const app = express();
 
+app.use(express.json());
 
 app.get("/",g);
 app.post("/",po);
