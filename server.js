@@ -1,14 +1,18 @@
 const express = require('express');
+const g = require('./routes/getrequest.js');
+const d = require('./routes/deleterequest.js');
+const po = require('./routes/postrequest.js');
+const p = require('./routes/putrequest.js')
+
 const app = express();
 
 
-app.get("/",handle_crud_request);
+app.get("/",g);
+app.post("/",po);
+app.delete("/",d);
+app.put("/",p);
+
+app.listen(3000);
 
 
 
-
-function handle_crud_request(req,res){
-    console.log("received\n");
-
-    res.send("served\n");
-}
