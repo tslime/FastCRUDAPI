@@ -1,8 +1,8 @@
 const express = require('express');
-const g = require('./routes/getrequest.js');
-const d = require('./routes/deleterequest.js');
-const po = require('./routes/postrequest.js');
-const p = require('./routes/putrequest.js')
+const g = require('./routesjson/getrequest.js');
+const d = require('./routesjson/deleterequest.js');
+const po = require('./routesjson/postrequest.js');
+const p = require('./routesjson/putrequest.js')
 
 const app = express();
 

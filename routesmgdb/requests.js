@@ -9,7 +9,7 @@ router.get('/models',async(req,res) => {
 
 router.post('/models',async(req,res) => {
     const updated_db = await It.create(req.body);
-    res.json(updated_db);
+    res.json(updated_db);        
 });
 
 router.delete('/models',async(req,res) => {
