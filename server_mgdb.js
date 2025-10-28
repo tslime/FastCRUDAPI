@@ -1,4 +1,5 @@
 //Security
+require('dotenv').config({path:'./db/bridge.env'})
 const cors = require('cors');
 const helmet = require('helmet');
 const rlimit = require('express-rate-limit');
@@ -27,8 +28,8 @@ app.use((err,req,res,next) => {
   res.status(500).json({error: "Internal server error",message: err.message});
 });
 
-app.listen(3000, '0.0.0.0', () => {
-    console.log("Server running on http://0.0.0.0:3000");
+app.listen(process.env.PORT, '0.0.0.0', () => {
+    console.log("Server running on http://0.0.0.0:process.env.PORT");
   });
   
 
