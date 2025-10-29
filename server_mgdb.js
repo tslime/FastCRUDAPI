@@ -1,3 +1,6 @@
+//metrics
+const metrius = require('./metrics/metrics.js')
+
 //Security
 require('dotenv').config({path:'./db/bridge.env'})
 const cors = require('cors');
@@ -21,6 +24,10 @@ app.use(window);
 
 //requests server
 app.use("/",func_requests);
+
+
+//get metrics
+app.get('/metrics',metrius);
 
 //centralized error handlelr
 app.use((err,req,res,next) => {
