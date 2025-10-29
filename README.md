@@ -9,7 +9,7 @@ Both versions are fully functional and organized in a clean project structure.
 
 ---
 
-## 🚀 Features
+##  Features
 
 ### Core Features
 - Comprehensive RESTful endpoints for CRUD operations:
@@ -33,7 +33,7 @@ Both versions are fully functional and organized in a clean project structure.
 
 ---
 
-## 🌐 API Endpoints
+## API Endpoints
 
 ### Base URL
 `http://localhost:5123` (configurable via `.env` file)
@@ -57,7 +57,7 @@ Both versions are fully functional and organized in a clean project structure.
 
 ---
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 - Node.js (v14+ recommended)
@@ -99,7 +99,7 @@ Both versions are fully functional and organized in a clean project structure.
 
 ---
 
-## 📊 Monitoring
+## Monitoring
 
 - **Prometheus**: Scrapes metrics from `/metrics` endpoint.
 - **Grafana**: Dashboards for observing API performance.
